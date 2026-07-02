@@ -2,8 +2,8 @@ import os
 import requests
 from pymongo import MongoClient
 
-# MongoDB connection details
-MONGO_URI = "mongodb+srv://ayonsarkar380:ayon78965432@cluster0.pqlngl0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  # Update with your actual MongoDB URI
+# MongoDB connection details — set MONGO_URI in your environment, never hardcode credentials
+MONGO_URI = os.environ["MONGO_URI"]
 DB_NAME = "aptinova"
 COLLECTION_NAME = "resumes"
 
